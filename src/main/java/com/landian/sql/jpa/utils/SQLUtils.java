@@ -11,19 +11,7 @@ import java.util.List;
  * @author Administrator
  */
 public class SQLUtils {
-	@Deprecated
-	public static String toSQL(List<Long> paramsList){
-		String inSQL = "";
-		if(!CollectionUtils.isEmpty(paramsList)){
-			StringBuffer sb = new StringBuffer();
-			for(Long param : paramsList){
-				sb.append(param.toString() + ",");
-			}
-			inSQL = sb.substring(0, sb.length()-1);
-		}
-		return inSQL;
-	}
-	
+
 	public static String intListToSQL(List<Integer> paramsList){
 		String inSQL = "";
 		if(!CollectionUtils.isEmpty(paramsList)){

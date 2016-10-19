@@ -82,16 +82,6 @@ public class UpdateUnitAppender{
 		return this.add(Update.sql(sql));
 	}
 
-
-	
-	/**
-	 * 更新单元 
-	 */
-	@Deprecated
-	public UpdateUnitAppender addUpdateUnit(UpdateUnit updateUnit){
-		return add(updateUnit);
-	}
-
 	/**
 	 * 更新单元
 	 */
@@ -110,14 +100,6 @@ public class UpdateUnitAppender{
 			}
 		}
 		return this;
-	}
-
-	/**
-	 * 更新单元 
-	 */
-	@Deprecated
-	public UpdateUnitAppender addUpdateUnit(List<UpdateUnit> updateUnits){
-		return add(updateUnits);
 	}
 
 	/**

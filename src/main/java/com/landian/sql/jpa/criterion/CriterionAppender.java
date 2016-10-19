@@ -23,14 +23,6 @@ public class CriterionAppender{
 	public List<Criterion> criterionList = new ArrayList<Criterion>();
 	
 	/**
-	 * 添加条件 
-	 */
-	@Deprecated
-	public CriterionAppender addCriterion(Criterion criterion){
-		return add(criterion);
-	}
-
-	/**
 	 * 添加条件
 	 */
 	public CriterionAppender add(Criterion criterion){
@@ -48,11 +40,6 @@ public class CriterionAppender{
 			}
 		}
 		return this;
-	}
-
-	@Deprecated
-	public CriterionAppender addCriterion(List<Criterion> criterions){
-		return add(criterions);
 	}
 
 	/**

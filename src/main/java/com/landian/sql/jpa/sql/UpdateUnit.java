@@ -9,5 +9,5 @@ public interface UpdateUnit extends Serializable {
 	/**
 	 * SQL片段 
 	 */
-	public String SQL();
+	String SQL();
 }

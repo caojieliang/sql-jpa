@@ -1,7 +1,5 @@
 package com.landian.sql.jpa.sql;
 
-import org.apache.commons.collections.CollectionUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,31 +49,7 @@ public class SelectUnitAppender{
 		}
 		return this;
 	}
-	
-	/**
-	 * 选择单元 
-	 */
-	@Deprecated
-	public SelectUnitAppender addSelectUnit(SelectUnit selectUnit){
-		selectUnitList.add(selectUnit);
-		return this;
-	}
-	
-	/**
-	 * 选择单元 
-	 */
-	@Deprecated
-	public SelectUnitAppender addSelectUnit(List<SelectUnit> selectUnits){
-		if(CollectionUtils.isNotEmpty(selectUnits)){
-			for(SelectUnit selectUnit : selectUnits){
-				if(null != selectUnit){
-					selectUnitList.add(selectUnit);
-				}
-			}
-		}
-		return this;
-	}
-	
+
 	/**
 	 * 返回列表 
 	 */

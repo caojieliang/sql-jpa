@@ -35,14 +35,6 @@ public class OrderAppender implements Serializable {
 	}
 	
 	/**
-	 * 添加条件 
-	 */
-	@Deprecated
-	public OrderAppender addOrder(Order order){
-		return add(order);
-	}
-
-	/**
 	 * 添加条件
 	 */
 	public OrderAppender add(Order order){

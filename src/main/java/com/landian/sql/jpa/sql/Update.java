@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * 更新单元建造厂(限制建造器)
- * to be continute
+ * to be continue
  */
 public class Update {
 	
