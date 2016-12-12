@@ -14,6 +14,13 @@ public class Order implements Serializable {
 		return proxyOrder;
 	}
 
+	public static Order newInstance(OrderVo orderVo){
+		if(orderVo.getOrder().equalsIgnoreCase(ASC)){
+			return Order.asc(orderVo.getSort());
+		}
+		return Order.desc(orderVo.getSort());
+	}
+
 	public static Order desc(String property){
 		Order proxyOrder = new Order(property, OrderPolicy.DESC);
 		return proxyOrder;
