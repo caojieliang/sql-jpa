@@ -14,6 +14,17 @@ public class Order implements Serializable {
 		return proxyOrder;
 	}
 
+	public static Order[] asArray(OrderVo... orderVos){
+		if(null == orderVos){
+			return new Order[]{};
+		}
+		Order[] array = new Order[orderVos.length];
+		for (int i=0; i<orderVos.length; i++) {
+			array[i] = newInstance(orderVos[i]);
+		}
+		return array;
+	}
+
 	public static Order newInstance(OrderVo orderVo){
 		if(orderVo.getOrder().equalsIgnoreCase(ASC)){
 			return Order.asc(orderVo.getSort());
