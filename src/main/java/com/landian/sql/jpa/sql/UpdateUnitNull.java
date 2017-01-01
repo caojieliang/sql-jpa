@@ -1,8 +1,11 @@
 package com.landian.sql.jpa.sql;
 
+import lombok.Data;
+
 /**
  * 等于条件SQL片段
  */
+@Data
 public class UpdateUnitNull implements UpdateUnit {
 
 	private static final long serialVersionUID = 1L;

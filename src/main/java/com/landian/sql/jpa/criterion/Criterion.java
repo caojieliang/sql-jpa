@@ -8,7 +8,7 @@ import java.io.Serializable;
  */
 public interface Criterion extends Serializable {
 	/**
-	 * SQL片段 
+	 * SQL片段
 	 */
-	public String SQL();
+	String SQL();
 }

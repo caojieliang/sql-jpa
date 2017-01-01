@@ -1,6 +1,7 @@
 package com.landian.sql.jpa.sql;
 
 import com.landian.sql.jpa.context.JavaType;
+import lombok.Data;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
@@ -9,6 +10,7 @@ import java.text.SimpleDateFormat;
 /**
  * 等于条件SQL片段
  */
+@Data
 public class UpdateUnitEqual implements UpdateUnit {
 	
 	private static final long serialVersionUID = 1L;
