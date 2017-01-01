@@ -2,14 +2,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.landian.sql</groupId>
 	<artifactId>sql-jpa</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0-RELEASE</version>
 	<packaging>jar</packaging>
 
   	<properties>
 		<junit.version>4.11</junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>4.2.1.RELEASE</spring.version>
-		<sql-builder.version>1.0.0-SNAPSHOT</sql-builder.version>
+		<sql-builder.version>1.0.0-RELEASE</sql-builder.version>
 		<lombok.version>1.14.4</lombok.version>
 	</properties>
 	
