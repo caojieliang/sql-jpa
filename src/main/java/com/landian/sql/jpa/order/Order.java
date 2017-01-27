@@ -6,8 +6,8 @@ import com.landian.sql.jpa.annotation.OrderPolicy;
 import java.io.Serializable;
 
 public class Order implements Serializable {
-	private static String ASC = "ASC";
-	private static String DESC = "DESC";
+	public static String ASC = "ASC";
+	public static String DESC = "DESC";
 
 	public static Order asc(String property){
 		Order proxyOrder = new Order(property, OrderPolicy.ASC);

@@ -11,6 +11,7 @@
 		<spring.version>4.2.1.RELEASE</spring.version>
 		<sql-builder.version>1.0.1-SNAPSHOT</sql-builder.version>
 		<lombok.version>1.14.4</lombok.version>
+		<swagger-annotations.version>1.5.3</swagger-annotations.version>
 	</properties>
 	
 	<dependencies>
@@ -59,6 +60,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-annotations</artifactId>
+			<version>${swagger-annotations.version}</version>
 		</dependency>
 	</dependencies>
 
