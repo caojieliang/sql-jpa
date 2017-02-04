@@ -19,5 +19,12 @@ public class SelectUnitRestrictions{
 	public static SelectUnit column(String column){
 		return new SelectUnitColumn(column);
 	}
+
+	/**
+	 * 自定义
+	 */
+	public static SelectUnit count(){
+		return new SelectUnitSQL("count(*)");
+	}
 	
 }
