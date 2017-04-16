@@ -17,7 +17,15 @@ import java.io.Serializable;
 @ApiModel(value = "OrderVo", description = "OrderVo")
 public class OrderVo implements Serializable {
 
-	public static OrderVo newInstance(String sort, String order){
+	public static OrderVo newInstanceDesc(String sort){
+		return newInstance(sort,"DESC");
+	}
+
+	public static OrderVo newInstanceASC(String sort){
+		return newInstance(sort,"ASC");
+	}
+
+	private static OrderVo newInstance(String sort, String order){
 		return OrderVo.builder().sort(sort).order(order).build();
 	}
 
