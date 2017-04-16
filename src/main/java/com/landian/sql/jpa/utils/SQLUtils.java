@@ -96,4 +96,8 @@ public class SQLUtils {
 		}
 		return inSQL;
 	}
+
+	public static String anyWhereSQL(String key){
+		return "'%" + key.trim() + "%'";
+	}
 }
