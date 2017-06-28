@@ -27,9 +27,9 @@ public class Order implements Serializable {
 
 	public static Order newInstance(OrderVo orderVo){
 		if(orderVo.getOrder().equalsIgnoreCase(ASC)){
-			return Order.asc(orderVo.getOrder());
+			return Order.asc(orderVo.getSort());
 		}
-		return Order.desc(orderVo.getOrder());
+		return Order.desc(orderVo.getSort());
 	}
 
 	public static Order desc(String property){
