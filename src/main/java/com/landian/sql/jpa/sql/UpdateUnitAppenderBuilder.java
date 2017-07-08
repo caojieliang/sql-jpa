@@ -19,7 +19,9 @@ public class UpdateUnitAppenderBuilder {
 	private static final Logger logger = Logger.getLogger(UpdateUnitAppenderBuilder.class);
 
 	/**
-	 * 构建更新UpdateUnitAppender
+	 * 构建更新UpdateUnitAppender，支持空属性值更新
+	 * @param updateVo 业务对象
+	 * @param ignoreFields 忽略的属性
 	 * @return
 	 */
 	public static UpdateUnitAppender buildWithNull(Object updateVo, List<String> ignoreFields){
