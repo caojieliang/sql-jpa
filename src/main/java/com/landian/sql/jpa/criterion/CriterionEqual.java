@@ -2,6 +2,7 @@ package com.landian.sql.jpa.criterion;
 
 
 import com.landian.sql.jpa.context.JavaType;
+import com.landian.sql.jpa.sql.SQLInjectPolicy;
 
 /**
  * 相等条件SQL片段
@@ -36,7 +37,9 @@ public class CriterionEqual implements Criterion {
 		if(type == JavaType.INT || type == JavaType.LONG){
 			return column + " = " + value;
 		}else if(type == JavaType.STRING){
-			return column + " = '" + value + "'";
+			String _str = (String) value;
+			String policy = SQLInjectPolicy.transform(_str.trim());
+			return column + " = '" + policy + "'";
 		}
 		return "";
 	}

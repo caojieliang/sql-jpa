@@ -1,6 +1,7 @@
 package com.landian.sql.jpa.criterion;
 
 
+import com.landian.sql.jpa.sql.SQLInjectPolicy;
 import org.apache.commons.lang.StringUtils;
 
 /**
@@ -32,7 +33,9 @@ public class CriterionLike implements Criterion {
 	 */
 	public String SQL(){
 		if(StringUtils.isNotBlank(value)){
-			return column + " like '%" + value.trim() + "%'";		}
+			String keyInjectPolicy = SQLInjectPolicy.transform(value.trim());
+			return column + " like '%" + keyInjectPolicy + "%'";
+		}
 		return "";
 	}
 }
