@@ -88,7 +88,7 @@ public class SQLUtils {
 		if(null != paramsArr){
 			StringBuffer sb = new StringBuffer();
 			for(String param : paramsArr){
-				if(!StringUtils.isNotBlank(param)){
+				if(StringUtils.isNotBlank(param)){
 					sb.append("'" + param.trim() + "',");
 				}
 			}
